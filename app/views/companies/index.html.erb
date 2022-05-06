@@ -4,5 +4,22 @@
 
 <ul>
 <%for company in companies%>
-<li><%=company["name"] %></li>
+<li><%=company["name"] %> - <%= company["city"]%></li>
 <% end %>
+</ul>
+<table>
+<tr>
+<th>Name</th>
+<th>City</th>
+<th>State</th>
+</tr>
+
+<% for company in companies%>
+<tr>
+    <td><%=company["name"]%>/td>
+    <td><%=company["city"]%>/td>
+    <td><%=company["state"]%>/td>
+    </tr>
+    <% end %>
+
+
